@@ -24,11 +24,16 @@
     // querySelector takes a CSS selector — same syntax you already know from CSS.
     // "#headline" means "the element with id='headline'"
     const headline = document.querySelector("#headline");
-    headline.innerHTML = "Changed by JavaScript!";
+    headline.innerHTML = "Geo!";
 
     // You can also select by class, by tag name, or by anything CSS lets you write.
     const tagline = document.querySelector("#tagline");
     tagline.innerHTML = "This paragraph was rewritten too.";
+    const date = new Date();
+    document.querySelector(".time").innerHTML = date;
+
+    document.querySelector("h1").style.color = "red";
+    document.querySelector("h1").style.backgroundColor = "yellow";
 
   </script>
 </body>
