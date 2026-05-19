@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 1a — Broken: script runs BEFORE the element exists</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- THIS IS THE BUG: the script runs before the browser has read the <h1> below.
+       Open the browser console (F12) and look at the error.
+       document.querySelector("#headline") returns null because the element doesn't exist yet. -->
+  <script>
+    const headline = document.querySelector("#headline");
+    headline.innerHTML = "Changed by JavaScript!";
+  </script>
+</head>
+<body>
+  <h1 id="headline">Original heading</h1>
+
+  <div class="note">
+    <strong>What went wrong?</strong>
+    Open the console (F12 → Console tab). You'll see an error like
+    <code>Cannot set properties of null</code>. The script ran before the &lt;h1&gt;
+    existed in the page. Compare with <code>01b-fixed.html</code>.
+  </div>
+</body>
+</html>
+
+<!-- https://www.w3schools.com/JS/js_date_methods.asp -->

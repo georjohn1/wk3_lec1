@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 2 — Focus highlight (STARTER)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Highlight the focused field</h1>
+  <p>Click into each field. When focused, add the class <code>focused</code>.
+     When the user clicks away (blur), remove it.</p>
+
+  <!--
+    TODO: add onfocus and onblur to EACH form field.
+    Hint: onfocus="this.classList.add('focused')"
+          onblur ="this.classList.remove('focused')"
+  -->
+
+  <form>
+    <p><label>Name <input type="text" placeholder="Your name"></label></p>
+    <p><label>Email <input type="email" placeholder="you@example.com"></label></p>
+    <p><label>Message <textarea rows="4"></textarea></label></p>
+  </form>
+</body>
+</html>

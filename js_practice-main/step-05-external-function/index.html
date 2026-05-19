@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 5 — External JS file with function call</title>
+  <link rel="stylesheet" href="../css/styles.css">
+ </style>
+</head>
+<body>
+  <h1>Calling functions from an external file</h1>
+
+  <p id="greeting">No greeting yet.</p>
+
+  <label>Your name: <input id="nameInput" type="text" value="Sam"></label>
+
+  <!--
+    Each onclick now calls a FUNCTION that lives in script.js.
+    The HTML stays clean — the JavaScript logic is all in one file.
+    This is exactly how Lightbox and MixItUp work: their .js file defines functions,
+    your HTML just calls them.
+  -->
+  <div>
+    <button onclick="sayHello()">Say hello</button>
+    <button onclick="greetByName()">Greet by name</button>
+    <button onclick="showRandomNumber()">Random number</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+
+  <!-- The script tag LOADS the external file. Still at the bottom! -->
+  <script src="script.js"></script>
+</body>
+</html>

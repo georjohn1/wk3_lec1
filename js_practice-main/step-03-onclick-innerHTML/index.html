@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 3 — Inline onclick that changes innerHTML</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+  <h1>Change text on the page</h1>
+
+  <p id="message">Waiting for you to click a button…</p>
+
+  <!--
+    Instead of popping an alert, we now reach into the page and CHANGE an element.
+    document.querySelector("#message") finds the paragraph above by its id.
+    .innerHTML = "..." replaces whatever is inside that element.
+  -->
+  <button onclick="document.querySelector('#message').innerHTML = 'You clicked the first button!'">
+    Button 1
+  </button>
+
+  <button onclick="document.querySelector('#message').innerHTML = 'Second button clicked.'">
+    Button 2
+  </button>
+
+  <button onclick="document.querySelector('#message').innerHTML = ''">
+    Clear
+  </button>
+
+  <p>
+    <em>Notice how the onclick code is getting long and ugly. Imagine doing this on 10 buttons.
+       That's the problem we'll solve in later steps.</em>
+  </p>
+</body>
+</html>

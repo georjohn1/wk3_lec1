@@ -1,0 +1,25 @@
+body { 
+  font-family: system-ui, sans-serif; 
+  padding: 15px; 
+  max-width: 700px; }
+
+.card {
+  display: inline-block;
+  width: 140px;
+  height: 100px;
+  margin: 5px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 110%;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.card.active {
+  background: tomato;
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}

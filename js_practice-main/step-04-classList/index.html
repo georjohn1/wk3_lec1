@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 4 — classList: add, remove, toggle</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <h1>Add and remove CSS classes with JavaScript</h1>
+
+  <div id="box">I am a box.</div>
+
+  <!--
+    classList is built into every HTML element.
+    It gives you three handy methods:
+      .add("name")    — adds the class (does nothing if already there)
+      .remove("name") — removes the class (does nothing if not there)
+      .toggle("name") — adds if missing, removes if present
+    The CSS classes themselves are defined in styles.css.
+  -->
+  <button onclick="document.querySelector('#box').classList.add('highlight')">
+    Add .highlight
+  </button>
+
+  <button onclick="document.querySelector('#box').classList.remove('highlight')">
+    Remove .highlight
+  </button>
+
+  <button onclick="document.querySelector('#box').classList.toggle('big')">
+    Toggle .big
+  </button>
+
+  <button onclick="document.querySelector('#box').classList.toggle('dark')">
+    Toggle .dark
+  </button>
+
+  <p>
+    <em>Key idea: JavaScript is just flipping a CSS class on and off.
+       All the visual change happens in styles.css. This is the cleanest way to
+       change appearance — let CSS do what CSS does best.</em>
+  </p>
+</body>
+</html>

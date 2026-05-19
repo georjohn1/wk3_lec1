@@ -1,0 +1,53 @@
+ body { 
+  font-family: system-ui, sans-serif; 
+  padding: 20px; 
+  max-width: 700px; 
+  cursor: pointer;
+}
+
+#box {
+  width: 200px;
+  height: 120px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: all 0.3s ease; /* makes class changes animate */
+}
+
+/* Classes that JavaScript will add/remove */
+.highlight {
+  outline: 4px solid gold;
+  background: #fff8d0 ;
+}
+
+.big {
+  width: 320px;
+  height: 200px;
+  font-size: 125%;
+}
+
+.dark {
+  background: #222;
+  color: white;
+}
+
+button { 
+  font-size: 110%; 
+  padding: 5px 10px; 
+  cursor: pointer; 
+}
+
+#greeting { 
+  padding: 5px; 
+  background: #f0f0f0; 
+  border-radius: 6px; 
+  min-height: 36px; 
+}
+input { 
+  padding: 5px; 
+}
+  
+

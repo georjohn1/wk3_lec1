@@ -1,0 +1,17 @@
+body { font-family: system-ui, sans-serif; padding: 2rem; max-width: 600px; }
+label { display: block; font-weight: bold; margin-bottom: 0.25rem; }
+input, textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  /* note: default :focus styles intentionally NOT used — we want JS to do it */
+  outline: none;
+}
+input.focused, textarea.focused {
+  border-color: dodgerblue;
+  background: #eaf3ff;
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.2);
+}

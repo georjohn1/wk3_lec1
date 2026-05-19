@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 7 — addEventListener (no inline onclick)</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <h1>Same buttons, zero <code>onclick</code> in the HTML</h1>
+
+  <p id="message">Waiting…</p>
+
+  <!--
+    Look — NO onclick attributes anywhere. The HTML is clean.
+    The JavaScript file finds these elements by id and attaches listeners.
+  -->
+  <button id="helloBtn">Say hello</button>
+  <button id="byeBtn">Say goodbye</button>
+  <button id="clearBtn">Clear</button>
+
+  <p>
+    <em>This is how better JavaScript is written. The HTML describes structure,
+       the CSS describes appearance, and the JS describes behaviour — each in its own file.</em>
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
