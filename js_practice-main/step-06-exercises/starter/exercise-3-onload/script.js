@@ -5,3 +5,9 @@
 //   const banner = document.querySelector("#banner");
 //   const today = new Date().toDateString();
 //   banner.innerHTML = `Welcome! Today is ${today}`;
+function welcome() {
+    console.log("hi")
+    const banner = document.querySelector("#banner");
+    const today = new Date().toDateString();
+    banner.innerHTML=`Welcome! Today is ${today}`;
+}

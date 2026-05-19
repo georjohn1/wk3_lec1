@@ -46,3 +46,8 @@ function reset() {
   document.querySelector("#greeting").innerHTML = defaultMessage;
   clickCount = 0;
 }
+
+function defaultMsg(){
+  document.querySelector("#greeting").innerHTML = 
+  "Hello there!";
+}

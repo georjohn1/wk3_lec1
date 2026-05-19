@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/styles.css">
  </style>
 </head>
-<body>
+<body onload="defaultMsg()">
   <h1>Calling functions from an external file</h1>
 
   <p id="greeting">No greeting yet.</p>
@@ -20,10 +20,10 @@
     your HTML just calls them.
   -->
   <div>
-    <button onclick="sayHello()">Say hello</button>
-    <button onclick="greetByName()">Greet by name</button>
-    <button onclick="showRandomNumber()">Random number</button>
-    <button onclick="reset()">Reset</button>
+    <button onfocus="sayHello()">Say hello</button>
+    <button onfocus="greetByName()">Greet by name</button>
+    <button onfocus="showRandomNumber()">Random number</button>
+    <button onfocus="reset()">Reset</button>
   </div>
 
   <!-- The script tag LOADS the external file. Still at the bottom! -->

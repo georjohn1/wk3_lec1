@@ -17,9 +17,15 @@
   -->
 
   <form>
-    <p><label>Name <input type="text" placeholder="Your name"></label></p>
-    <p><label>Email <input type="email" placeholder="you@example.com"></label></p>
-    <p><label>Message <textarea rows="4"></textarea></label></p>
+    <p><label>Name <input type="text" placeholder="Your name" 
+      onfocus="this.classList.add('focused')"
+      onblur="this.classList.remove('focused')"></label></p>
+    <p><label>Email <input type="email" placeholder="you@example.com"
+      onfocus="this.classList.add('focused')"
+      onblur="this.classList.remove('focused')"></label></p>
+    <p><label>Message <textarea rows="4"
+      onfocus="this.classList.add('focused')"
+      onblur="this.classList.remove('focused')"></textarea></label></p>
   </form>
 </body>
 </html>
