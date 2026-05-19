@@ -20,10 +20,15 @@
      the attribute uses double quotes, so the string inside uses single quotes.</p>
 
    <button onclick="
-   prompt('What is your name?');">Introduce Yourself</button>
+   const name = prompt('What is your name?');
+   document.querySelector('#name').innerHTML = 'Hello, ' + name + '!';">Introduce Yourself</button>
 
 
    <p id = "name"></p>
+
+   <script>
+
+   </script>
 
 </body>
 </html>
