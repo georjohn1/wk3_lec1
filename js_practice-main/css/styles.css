@@ -21,6 +21,7 @@
 .highlight {
   outline: 4px solid gold;
   background: #fff8d0 ;
+  border: 20px solid green;
 }
 
 .big {
